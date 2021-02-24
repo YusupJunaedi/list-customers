@@ -1,15 +1,13 @@
 import { Dialog, DialogContent, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
-import React, { useState } from 'react'
+import React from 'react'
 import EmailIcon from '@material-ui/icons/Email';
 import PersonIcon from '@material-ui/icons/Person';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import BusinessIcon from '@material-ui/icons/Business';
 
-function ModalDialog({ openDialog, children, title, closeModal, data }) {
+function ModalDialog({ openDialog, closeModal, data }) {
 
-    const [open, setOpen] = useState(false);
-
-    const handleClose = (type) => {
+    const handleClose = () => {
         closeModal(false);
     };
 

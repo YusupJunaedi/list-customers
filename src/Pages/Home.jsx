@@ -60,7 +60,7 @@ function Home() {
                 </TableContainer>
             </div>
 
-            <ModalDialog openDialog={openModal} closeModal={(value => setOpenModal(value))} title="Tambah Data" data={data} />
+            <ModalDialog openDialog={openModal} closeModal={(value => setOpenModal(value))} data={data} />
 
         </div>
     )
